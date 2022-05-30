@@ -212,13 +212,13 @@ def main():
 
     # Lutris paths
     parser.add_argument('-ld', '--lutris-database', type=str,
-                        default=os.path.join(os.path.expanduser('~'), 'pga.db'),
+                        default=os.path.join(os.path.expanduser('~'), '.local', 'share', 'lutris', 'pga.db'),
                         help='Path to the Lutris SQLite database.')
     parser.add_argument('-ly', '--lutris-yml-dir', type=directory,
-                        default=os.path.join(os.path.expanduser('~')),
+                        default=os.path.join(os.path.expanduser('~'), '.config', 'lutris', 'games'),
                         help='Directory containing Lutris yml files.')
     parser.add_argument('-lg', '--lutris-game-dir', type=directory,
-                        default=os.path.join(os.path.expanduser('~')),
+                        default=os.path.join(os.path.expanduser('~'), 'Games'),
                         help='Lutris games install dir.')
 
     # Other options
